@@ -25,7 +25,7 @@ files=$(find . -maxdepth 1 -type f -newermt "$(date +%Y-%m-%d) $number:00:00" ! 
 
 # Έλεγχος για την ύπαρξη αρχείων
 if [ -z "$files" ]; then
-    echo "Δεν υπάρχουν αρχεία που ικανοποιούν το κριτήριο."
+    echo "Δεν υπάρχουν αρχεία που να δημιουργήθηκαν μεταξύ $number:00 και $number:59."
     exit 1
 fi
 
